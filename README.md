@@ -91,6 +91,7 @@ Process move commands received from clients and update the game state accordingl
 Broadcast updated game state to all connected clients after each valid move. 
 
 Websocket Communication 
+
 Implement the following event types: 
 Game initialization 
 Player move 
@@ -98,25 +99,24 @@ Game state update
 Invalid move notification 
 Game over notification 
 
-#Web Client 
+Web Client 
 
 Create a responsive web page that displays: 
-
 A 5x5 grid representing the game board 
 Current game state with characters positioned on the board 
 
 Player turn indication 
 
-##Move history (Optional) 
+Move history (Optional) 
 
-###Implement interactive features: 
+Implement interactive features: 
 
 Clickable character pieces for the current player 
 Display valid moves as buttons when a character is selected below the grid. 
 Send move commands to the server when a valid move is chosen 
 Handle and display server responses, including invalid move notifications and game over states.
 
-###User Interface Requirements
+User Interface Requirements
 
 Display the 5x5 game board with clear differentiation between empty cells and character positions. 
 Use distinct visual representations for each player's characters (e.g., different colors or prefixes as in the original requirements). 
@@ -124,20 +124,25 @@ When a player selects their character, highlight valid move options as clickable
 Show the current player's turn prominently. 
 Display a move history or log. 
 Implement a game over screen showing the winner and offering an option to start a new game. 
+
 Implementation Steps 
+
 Set up the server with the core game logic. 
 Implement the websocket server and define the communication protocol. 
 Create the web client interface with any web framework. 
 Implement websocket communication in the client. 
 Integrate the game logic with the websocket layer on the server. 
+
 Develop the interactive features of the web client. 
 Implement game state rendering and updates on the client side. 
 Add final touches such as move validation, game over conditions, and the option to start a new game. 
 Bonus Challenges 
+
 Implement additional character types with unique move patterns. 
 Add Hero3: 
 Movement: Moves 2 steps straight and one to the side in a single turn. 
 Attack: Kills only the character at its final landing position (if occupied by an opponent). 
+
 Move commands: 
 FL: 2 steps Forward, 1 step Left 
 FR: 2 steps Forward, 1 step Right 
@@ -147,6 +152,7 @@ RF: 2 steps Right, 1 step Forward
 RB: 2 steps Right, 1 step Backward 
 LF: 2 steps Left, 1 step Forward 
 LB: 2 steps Left, 1 step Backward 
+
 Example moves: H3:FR (2 front, 1 right), H3:RF (2 right, 1 front) 
 Implement a dynamic team composition feature: 
 Allow players to choose their team composition at the start of each game. 
