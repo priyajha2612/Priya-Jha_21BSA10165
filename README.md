@@ -1,6 +1,9 @@
 # Priya-Jha_21BSA10165
+
 ##Turn-based Chess-like Game with Websocket Communication 
-###Objective 
+
+###Objective
+
 ####Develop a turn-based chess-like game with a server-client architecture, utilizing websockets for real-time communication and a web-based user interface. 
 ###Components 
 1. Server 
